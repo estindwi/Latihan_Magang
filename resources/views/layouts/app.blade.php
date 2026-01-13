@@ -10,21 +10,28 @@
 <div class="flex min-h-screen">
 
     <!-- SIDEBAR -->
-    <aside class="w-64 bg-blue-900 text-white">
-        <div class="p-4 text-xl font-bold border-b border-blue-700">
-            🏥 RS Sehat Sentosa
+    <aside class="w-64 bg-green-900 text-white">
+        <div class="p-4 text-xl font-bold border-b border-white-700">
+            RS Sehat Sentosa
         </div>
 
         <nav class="p-4 space-y-2">
             <a href="/dashboard"
-               class="block px-4 py-2 rounded hover:bg-blue-700">
-                📊 Dashboard
+               class="block px-4 py-2 rounded text-white hover:bg-white/10">
+                Dashboard
             </a>
 
             <a href="/pasien"
-               class="block px-4 py-2 rounded hover:bg-blue-700">
-                🧑‍⚕️ Data Pasien
+               class="block px-4 py-2 rounded text-white hover:bg-white/10">
+                Data Pasien
             </a>
+            <a href="{{ route('dokter.index') }}" class="block py-2 px-4 hover:bg-white/10">
+                Data Dokter
+            </a>
+            <a href="{{ route('rekam-medis.index') }}" class="block py-2 px-4 hover:bg-white/10">
+                Rekam Medis
+            </a>
+
         </nav>
     </aside>
 

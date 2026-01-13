@@ -40,11 +40,8 @@
             <label class="block mb-1">Jenis Kelamin</label>
             <select name="jenis_kelamin" class="border p-2 w-full rounded">
                 <option value="">-- Pilih --</option>
-                <option value="L" {{ old('jenis_kelamin', $pasien->jenis_kelamin)=='L'?'selected':'' }}>
-                    Laki-laki
-                </option>
-                <option value="P" {{ old('jenis_kelamin', $pasien->jenis_kelamin)=='P'?'selected':'' }}>
-                    Perempuan
+                 <option value="Laki-laki" {{ old('jenis_kelamin')=='Laki-laki'?'selected':'' }}>Laki-laki</option>
+                <option value="Perempuan" {{ old('jenis_kelamin')=='Perempuan'?'selected':'' }}>Perempuan</option>
                 </option>
             </select>
         </div>

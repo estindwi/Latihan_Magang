@@ -6,19 +6,12 @@ use Illuminate\Database\Eloquent\Model;
 use Illuminate\Database\Eloquent\Factories\HasFactory;
 use App\Models\RekamMedis;
 
-class Pasien extends Model
-{
-    protected $table = 'pasiens'; 
 
-    protected $fillable = [
-        'nik',
-        'nama',
-        'jenis_kelamin',
-        'tempat_lahir',
-        'tanggal_lahir',
-        'alamat',
-        'no_hp'
-    ];
+class Dokter extends Model
+{
+    use HasFactory;
+
+    protected $fillable = ['nama', 'spesialis'];
 
     public function rekamMedis()
     {

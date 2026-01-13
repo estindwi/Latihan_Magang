@@ -77,22 +77,22 @@ class PasienController extends Controller
      */
     public function update(Request $request, string $id)
     {
-         $pasien = Pasien::findOrFail($id);
+    $pasien = Pasien::findOrFail($id);
 
-        $request->validate([
-            'nik' => 'required|unique:pasiens,nik,' . $id,
-            'nama' => 'required',
-            'jenis_kelamin' => 'required',
-            'tempat_lahir' => 'required',
-            'tanggal_lahir' => 'required|date',
-            'alamat' => 'required',
-            'no_hp' => 'required'
-        ]);
+    $validated = $request->validate([
+        'nik'           => 'required|unique:pasiens,nik,' . $id,
+        'nama'          => 'required',
+        'jenis_kelamin' => 'required|in:Laki-laki,Perempuan',
+        'tempat_lahir'  => 'required',
+        'tanggal_lahir' => 'required|date',
+        'alamat'        => 'required',
+        'no_hp'         => 'required',
+    ]);
 
-        $pasien->update($request->all());
+    $pasien->update($validated);
 
-        return redirect()->route('pasien.index')
-                         ->with('success', 'Data pasien berhasil diperbarui');
+    return redirect()->route('pasien.index')
+                     ->with('success', 'Data pasien berhasil diperbarui');
     }
 
     /**

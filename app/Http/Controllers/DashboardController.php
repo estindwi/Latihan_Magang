@@ -4,6 +4,7 @@ namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
 use App\Models\Pasien;
+use App\Models\Dokter;
 
 class DashboardController extends Controller
 {
@@ -13,7 +14,7 @@ class DashboardController extends Controller
         return view('dashboard', [
             'totalPasien' => Pasien::count(),
             'pasienHariIni' => Pasien::whereDate('created_at', today())->count(),
-            'dokterAktif' => 8, // sementara
+            'dokterAktif' => Dokter::count(),
         ]);
     }
 }
