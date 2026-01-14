@@ -44,9 +44,16 @@
         </div>
 
         <div>
-            <label class="block mb-1">Tempat Lahir</label>
-            <input type="text" name="tempat_lahir" class="border p-2 w-full rounded" value="{{ old('tempat_lahir') }}">
-        </div>
+        <label class="block mb-1">Tempat Lahir</label>
+        <input
+            type="text"
+            name="tempat_lahir"
+            required
+            class="border p-2 w-full rounded"
+            value="{{ old('tempat_lahir') }}"
+        >
+    </div>
+
 
         <div>
             <label class="block mb-1">Tanggal Lahir</label>
