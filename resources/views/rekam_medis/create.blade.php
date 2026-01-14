@@ -5,7 +5,7 @@
 <div class="bg-white p-6 rounded shadow max-w-xl">
   <div class="flex justify-between items-center mb-4">
     <h1 class="text-xl font-bold">Tambah Rekam Medis</h1>
-    <a href="{{ route('rekam-medis.index') }}" class="text-blue-600 hover:underline">Kembali</a>
+    <a href="{{ route('rekam-medis.index') }}" class="text-green-600 hover:underline">Kembali</a>
   </div>
 
   @if ($errors->any())
@@ -60,7 +60,7 @@
              value="{{ old('diagnosa') }}">
     </div>
 
-    <button class="bg-blue-600 hover:bg-blue-700 text-white px-4 py-2 rounded">
+    <button class="bg-green-700 hover:bg-green-600 text-white px-4 py-2 rounded">
       Simpan
     </button>
   </form>

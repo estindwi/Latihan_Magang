@@ -8,6 +8,7 @@ use App\Models\RekamMedis;
 
 class Pasien extends Model
 {
+    use HasFactory;
     protected $table = 'pasiens'; 
 
     protected $fillable = [

@@ -6,7 +6,7 @@
 <div class="bg-white p-6 rounded shadow max-w-xl">
   <div class="flex justify-between items-center mb-4">
     <h1 class="text-xl font-bold">Edit Rekam Medis</h1>
-    <a href="{{ route('rekam-medis.index') }}" class="text-blue-600 hover:underline">Kembali</a>
+    <a href="{{ route('rekam-medis.index') }}" class="text-green-600 hover:underline">Kembali</a>
   </div>
 
   @if ($errors->any())

@@ -36,7 +36,7 @@
         </div>
 
         <div class="flex gap-2">
-            <button class="bg-blue-600 text-white px-4 py-2 rounded hover:bg-blue-700">
+            <button class="bg-green-700 text-white px-4 py-2 rounded hover:bg-green-600">
                 Simpan
             </button>
             <a href="{{ route('dokter.index') }}" class="bg-gray-300 px-4 py-2 rounded hover:bg-gray-400">

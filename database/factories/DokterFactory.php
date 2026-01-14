@@ -17,7 +17,13 @@ class DokterFactory extends Factory
                 'Anak',
                 'Gigi',
                 'Kandungan',
-                'Bedah'
+                'Bedah',
+                'Jantung',
+                'Mata',
+                'THT',
+                'Kulit',
+                'Saraf',
+                'Paru'
             ]),
         ];
     }

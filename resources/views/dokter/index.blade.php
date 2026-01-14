@@ -35,7 +35,7 @@
         clearTimeout(t);
         t = setTimeout(() => {
             document.getElementById('searchForm').submit();
-        }, 400); // delay biar gak submit tiap huruf (bisa kecilin)
+        }, 500); 
     }
     </script>
 
